@@ -6,7 +6,7 @@ services:
     ports:
       - "3306:3306"
     volumes:
-      - ./mysql/:/var/lib/mysql/:rw
+      - /data/scripts/zabbix/mysql/:/var/lib/mysql/:rw
     environment:
       - MYSQL_ROOT_PASSWORD=123456
       - MYSQL_USER=zabbix
